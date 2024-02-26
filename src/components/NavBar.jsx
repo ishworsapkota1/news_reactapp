@@ -44,12 +44,6 @@ const NavBar = () => {
       className="flex flex-row justify-between border-b-[3px] border-applightgreen mb-10 w-commonwidth mx-auto "
     >
       <div>
-        {/* <img
-          onClick={() => navigate("/")}
-          src={logo}
-          alt=""
-          className=" h-[100px] -mb-4 -mt-2  object-cover cursor-pointer"
-        /> */}
         <h2 onClick={() => navigate("/")}>logo</h2>
       </div>
       <div className="xsm:hidden sm:flex flex flex-row gap-[40px]  items-center">
