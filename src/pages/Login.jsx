@@ -1,6 +1,6 @@
-import { signinwith } from "../../fakedata";
+import { signinwith } from "../../fakeData";
 import SiginWith from "../components/SignInWith";
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import loginImg from "../assets/auth_logo.png";
 import { useGoogleLogin } from "@react-oauth/google";
 import axios from "axios";
