@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Axios from "../api/server";
 import Card from "../components/Card";
@@ -50,13 +50,13 @@ const Category = () => {
           className="text-3xl font-bold "
           style={{ color: darkMode ? "white" : "black" }}
         >
-          Top News in "{}"
+          {/* Top News in "{}" */}hi
         </p>
         <SelectComponent options={selectOptionsFiltered} setNews={setNews} />
       </div>
       <div className="grid xms:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-[30px] justify-between px-[20px] ">
         {news?.map((item) => {
-          return <Card item={item} />;
+          return <Card key={item.id} item={item} />;
         })}
       </div>
       <div className="flex justify-center items-center mt-[50px]">

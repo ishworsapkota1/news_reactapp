@@ -20,6 +20,7 @@ function App() {
     document.body.style.color = darkMode ? "white" : "black";
   }, [darkMode]);
   console.log(import.meta.env.VITE_MY_GOOGLE_LOGIN_CLIENT_ID);
+  
   return (
     <BrowserRouter>
       <Routes>

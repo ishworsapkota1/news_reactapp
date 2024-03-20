@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import useCheckTokenExpiration from "../../hooks/useCheckTokenExpiration";
 import { useEffect } from "react";
-// import { useDispatch } from "react-redux";
 
 const Layout = () => {
   const onScrollTop = () => {
@@ -13,8 +12,11 @@ const Layout = () => {
       behavior: "smooth",
     });
   };
+
   const [isExpired] = useCheckTokenExpiration();
+
   const navigate = useNavigate();
+
   useEffect(() => {
     if (isExpired) {
       localStorage.clear();

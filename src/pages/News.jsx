@@ -34,7 +34,9 @@ function News() {
       } else {
         setSimilarStories(response.data.data);
       }
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const getNewsById = async () => {
@@ -72,7 +74,7 @@ function News() {
             </p>
           </div>
           <div className="bg-applightgreen shadow-sm px-4 py-2 rounded-lg text-appgreenhover text-sm font-semibold">
-              {news ? news.topics?.[0]?.name : ""}
+            {news ? news.topics?.[0]?.name : ""}
           </div>
         </div>
         <img
