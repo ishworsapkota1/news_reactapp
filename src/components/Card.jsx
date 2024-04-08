@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { useSelector } from "react-redux";
 import { IoBookmarks } from "react-icons/io5";

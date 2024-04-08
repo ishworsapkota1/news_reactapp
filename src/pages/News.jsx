@@ -64,7 +64,7 @@ function News() {
               className="text-sm font-medium"
               style={{ color: darkMode ? "white" : "black" }}
             >
-              Sojo News Team
+              News Team
             </p>
             <p
               className="text-xs text-gray-500"
